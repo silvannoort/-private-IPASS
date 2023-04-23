@@ -1,8 +1,14 @@
 public class Gebruiker {
     private int id;
-    private String gebruikersnaam;
-    private String wachtwoord;
+    private String naam;
     private String email;
 
-    // Constructor, getters, setters en methoden: inloggen(), uitloggen(), wachtwoordWijzigen()
+    public Gebruiker(int id, String naam, String email) {
+        this.id = id;
+        this.naam = naam;
+        this.email = email;
+    }
+
+    // getters en setters
 }
+

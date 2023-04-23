@@ -1,11 +1,42 @@
-import java.sql.Date;
-
+import org.json.JSONObject;
 public class Artikel {
     private int id;
     private String titel;
     private String inhoud;
-    private Categorie categorie;
-    private String afbeelding;
-    private Date publicatieDatum;    
-    // Constructor, getters, setters en methoden: toevoegen(), bewerken(), verwijderen()
+    private String afbeeldingUrl;
+    private int categorieId;
+
+    public Artikel(int id, String titel, String inhoud, String afbeeldingUrl, int categorieId) {
+        this.id = id;
+        this.titel = titel;
+        this.inhoud = inhoud;
+        this.afbeeldingUrl = afbeeldingUrl;
+        this.categorieId = categorieId;
+    }
+
+    public int getCategorieId() {
+        return 0;
+    }
+
+    public int getId() {
+        return 0;
+    }
+
+    // getters en setters
+    public JSONObject toJSON() {
+        JSONObject json = new JSONObject();
+        json.put("id", id);
+        json.put("titel", titel);
+        json.put("inhoud", inhoud);
+        json.put("afbeeldingUrl", afbeeldingUrl);
+        json.put("categorieId", categorieId);
+        return json;
+    }
 }
+
+
+
+
+
+
+    
