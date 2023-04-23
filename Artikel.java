@@ -1,10 +1,23 @@
+package com.example.huisinrichting;
 import org.json.JSONObject;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Artikel {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String titel;
     private String inhoud;
     private String afbeeldingUrl;
-    private int categorieId;
+    private Long categorieId;
+
+    // Getters en setters
+}
+
 
     public Artikel(int id, String titel, String inhoud, String afbeeldingUrl, int categorieId) {
         this.id = id;
@@ -39,4 +52,3 @@ public class Artikel {
 
 
 
-    
