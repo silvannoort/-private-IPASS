@@ -92,3 +92,16 @@ html {
     flex-direction: column;
     min-height: 100%;
 }
+.intro {
+    margin: 20px 0;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
