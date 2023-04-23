@@ -1,25 +1,12 @@
-package src.main.Java;
 public class Product {
     private int id;
-    private String naam;
-    private String beschrijving;
-    private double prijs;
-    private String afbeeldingUrl;
-    private String partnerUrl;
+    private String name;
+    private String description;
+    private String imageUrl;
+    private double price;
+    private String affiliateLink;
+    private String category;
 
-    public Product(int id, String naam, String beschrijving, double prijs, String afbeeldingUrl, String partnerUrl) {
-        this.id = id;
-        this.naam = naam;
-        this.beschrijving = beschrijving;
-        this.prijs = prijs;
-        this.afbeeldingUrl = afbeeldingUrl;
-        this.partnerUrl = partnerUrl;
-    }
-
-    // getters en setters
+    // Constructor, getters en setters
 }
-
-
-
-
 
