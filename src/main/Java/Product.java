@@ -1,12 +1,19 @@
 public class Product {
-    private int id;
-    private String name;
-    private String description;
-    private String imageUrl;
-    private double price;
+    private int productID;
+    private String naam;
+    private double prijs;
+    private String afbeelding;
     private String affiliateLink;
-    private String category;
 
-    // Constructor, getters en setters
+    public Product(int productID, String naam, double prijs, String afbeelding, String affiliateLink) {
+        this.productID = productID;
+        this.naam = naam;
+        this.prijs = prijs;
+        this.afbeelding = afbeelding;
+        this.affiliateLink = affiliateLink;
+    }
+
+    // Getters en setters voor de attributen
 }
 
+}
