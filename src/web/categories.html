@@ -6,6 +6,8 @@
     <title>Categories</title>
     <link rel="stylesheet" href="styles.css">
     <script src="categories.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  
 </head>
 <body>
     <header>
@@ -13,24 +15,26 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="blog.html">recente Tips!</a>
-            <a href="categories.html">Categories</a>
+            <a href="categories.html">Categorieën</a>
             <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="admin.html">Admin</a>
         </nav>
     </header>
     <main>
-        <h2>Categorieën</h2>
+        <h2 class="animate-on-load slide-from-left">Categorieën</h2>
         <div id="Categories"></div>
         <section class="categories-container">
-            <button class="category-button" onclick="redirectToCategory('category1.html')">Banken</button>
-            <button class="category-button" onclick="redirectToCategory('category2.html')">Tafels</button>
-            <button class="category-button" onclick="redirectToCategory('category3.html')">Keuken-assesoires</button>
-            <button class="category-button" onclick="redirectToCategory('category1.html')">Decoratie binnenshuis</button>
-            <button class="category-button" onclick="redirectToCategory('category2.html')">Decoratie Tuin</button>
-            <button class="category-button" onclick="redirectToCategory('category3.html')">Slaapkamer</button>
-            <button class="category-button" onclick="redirectToCategory('category3.html')">Verlichting</button>
-            <button class="category-button" onclick="redirectToCategory('category1.html')">Keukenaccessoires</button>
-            <button class="category-button" onclick="redirectToCategory('category2.html')">Raamdecoratie</button>
-            <button class="category-button" onclick="redirectToCategory('category3.html')">Deuren</button>
+            <button class="category-button" onclick="redirectToCategory('Banken.html')">Banken</button>
+            <button class="category-button" onclick="redirectToCategory('Tafels.html')">Tafels</button>
+            <button class="category-button" onclick="redirectToCategory('Keuken-assesoires.html')">Keuken-assesoires</button>
+            <button class="category-button" onclick="redirectToCategory('Decoratie binnenshuis.html')">Decoratie binnenshuis</button>
+            <button class="category-button" onclick="redirectToCategory('Decoratie Tuin.html')">Decoratie Tuin</button>
+            <button class="category-button" onclick="redirectToCategory('Slaapkamer.html')">Slaapkamer</button>
+            <button class="category-button" onclick="redirectToCategory('Verlichting.html')">Verlichting</button>
+            <button class="category-button" onclick="redirectToCategory('Keuken-assesoires.html')">Keukenaccessoires</button>
+            <button class="category-button" onclick="redirectToCategory('Raamdecoratie.html')">Raamdecoratie</button>
+            <button class="category-button" onclick="redirectToCategory('Deuren.html')">Deuren</button>
            
         </section>   
     </div>
@@ -38,7 +42,11 @@
     <footer>
         <p>&copy; 2023 - InterieurGuru.nl. All rights reserved.</p>
     </footer>
+
+    <script src="page-load-animation.js"></script>
 </body>
+  </body>
+  
 </html>
 
 
