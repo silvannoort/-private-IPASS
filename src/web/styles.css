@@ -328,13 +328,17 @@ textarea {
 .admin-button:hover {
     background-color: #6b6966;
 }
+
+h3{
+    color: #2e1e1e;
+}
 form label {
-    color: #f4f1ea;
+    color: #2e1e1e;
 }
 #change-password-form {
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background-color: #4d4b48;
     color: #f4f1ea;
     border-radius: 10px;
@@ -344,7 +348,7 @@ form label {
 #change-password-form input {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 #change-password-form button {
@@ -360,7 +364,7 @@ form label {
     margin-top: 10px;
 }
 .hero {
-   
+
     background-size: cover;
     background-position: center;
     height: 20vh;
@@ -402,16 +406,18 @@ form label {
     opacity: 1;
   }
   
-  
-  
+
+.add-blog-post {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.add-blog-post .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
 
-
-
-
-
-
-    
 
 

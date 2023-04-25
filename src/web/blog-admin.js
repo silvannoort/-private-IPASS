@@ -1,32 +1,20 @@
-document.getElementById("blog-post-form").addEventListener("submit", async (event) => {
-    event.preventDefault();
+const blogPostForm = document.querySelector('#blog-post-form');
 
-    const title = document.getElementById("title").value;
-    const content = document.getElementById("content").value;
-    const category = document.getElementById("category").value;
+blogPostForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // voorkomt dat het formulier opnieuw wordt ingediend
 
-    const blogPostData = {
-        title,
-        content,
-        category
-    };
+  // Verkrijg de gegevens uit het formulier
+  const title = blogPostForm.querySelector('#title').value;
+  const date = blogPostForm.querySelector('#date').value
+  const category = blogPostForm.querySelector('#category').value;
+  const content = blogPostForm.querySelector('#content').value;
 
-    try {
-        const response = await fetch("https://your-backend-service-url.com/api/blog-posts", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(blogPostData)
-        });
+  // Sla de gegevens op in de database (of elders)
+  // bijvoorbeeld met behulp van AJAX om de gegevens naar de server te verzenden
+  // en vervolgens te verwerken met PHP of een andere server-side scripttaal
 
-        if (response.ok) {
-            alert("Blog post successfully added!");
-            document.getElementById("blog-post-form").reset();
-        } else {
-            throw new Error("Failed to add blog post");
-        }
-    } catch (error) {
-        alert("Error: " + error.message);
-            
-    
+  // Wis het formulier nadat de gegevens zijn opgeslagen
+  blogPostForm.reset();
+
+  // Voeg de nieuwe blogpost toe aan de pagina (afhankelijk van hoe u uw blogpagina dynamisch genereert)
+});

@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-</head>
-
-<body>
+    <script src="blog-admin.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>InterieurGuru</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="blog.html">recente Tips!</a>
-            <a href="categories.html">Categorieën</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="contact.html">Contact</a>
-            <a href="admin.html">Admin</a>
-        </nav>
+      <h1>InterieurGuru</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Recente Tips!</a>
+        <a href="categories.html">Categorieën</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </nav>
     </header>
 
     <main>
-        <h1>Recente aanbevelingen van onze specialisten!</h1>
-        <div class="blog-post">
-            <h2>Blogpost Titel 1</h2>
-            <p class="post-date">Datum</p>
-            <p>Blogpost samenvatting...</p>
-            <a href="#" class="read-more">Lees meer</a>
-        </div>
-        <!-- ...more blog posts... -->
-    </main>
-    
-        </section>
+      <h1>Recente aanbevelingen van onze specialisten!</h1>
+      <div id="blog-post-container">
+        <!-- blog posts worden hier weergegeven -->
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 - InterieurGuru Website. All rights reserved.</p>
+      <p>&copy; 2023 - InterieurGuru Website. All rights reserved.</p>
     </footer>
 
     <script src="blog.js"></script>
     <script src="page-load-animation.js"></script>
-</body>
-
+  </body>
 </html>
