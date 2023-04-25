@@ -59,7 +59,7 @@ function createProductElement(product) {
 
 document.addEventListener("DOMContentLoaded", () => {
     loadContent();
-// Load the Google Charts library
+
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(loadDashboard);
 
@@ -82,7 +82,7 @@ function displaySalesData(salesData) {
 }
 
 function drawSalesChart(salesData) {
-    // Create a DataTable for the sales data
+    
     const data = new google.visualization.DataTable();
     data.addColumn("string", "Product");
     data.addColumn("number", "Sales");
@@ -91,19 +91,17 @@ function drawSalesChart(salesData) {
         data.addRow([sale.productId, sale.price]);
     });
 
-    // Set chart options
     const options = {
         title: "Product Sales",
         legend: { position: "none" }
     };
 
-    // Instantiate and draw the chart
     const chart = new google.visualization.ColumnChart(document.getElementById("sales_chart"));
     chart.draw(data, options);
 }
 
 function drawRevenueChart(salesData) {
-    // Create a DataTable for the revenue data
+    
     const data = new google.visualization.DataTable();
     data.addColumn("string", "Product");
     data.addColumn("number", "Revenue");
@@ -112,13 +110,13 @@ function drawRevenueChart(salesData) {
         data.addRow([sale.productId, sale.price]);
     });
 
-    // Set chart options
+    
     const options = {
         title: "Product Revenue",
         legend: { position: "none" }
     };
 
-    // Instantiate and draw the chart
+    
     const chart = new google.visualization.ColumnChart(document.getElementById("revenue_chart"));
     chart.draw(data, options);
 }
