@@ -8,7 +8,7 @@ function login(e) {
     const password = document.getElementById("password").value;
 
     if (username === adminUsername && password === adminPassword) {
-        alert("Login successful!");
+        alert("Login successful!")
         
         window.location.href = "dashboard.html";
     } else {
