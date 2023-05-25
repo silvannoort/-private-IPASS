@@ -1,10 +1,16 @@
-public class Beheerder extends Gebruiker {
-    private int beheerderID;
+public class Beheerder {
+    private String beheerderID;
+    private String beheerdersnaam;
+    private String wachtwoord;
+    private String email;
 
-    public Beheerder(int beheerderID, String gebruikersnaam, String email, String wachtwoord) {
-        super(gebruikersnaam, email, wachtwoord);
-        this.beheerderID = beheerderID;
+    
+
+    public void beheerGebruikers() {
+        
     }
 
-    // Getters en setters voor de attributen
+    public void monitorSysteem() {
+        
+    }
 }

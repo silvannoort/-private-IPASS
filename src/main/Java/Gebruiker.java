@@ -1,13 +1,19 @@
 public class Gebruiker {
+    private String gebruikersID;
     private String gebruikersnaam;
-    private String email;
     private String wachtwoord;
+    private String email;
 
-    public Gebruiker(String gebruikersnaam, String email, String wachtwoord) {
-        this.gebruikersnaam = gebruikersnaam;
-        this.email = email;
-        this.wachtwoord = wachtwoord;
+
+    public void doorzoektWebsite(String categorie) {
+        
     }
 
-    // Getters en setters voor de attributen
+    public void bekijktArtikelen() {
+        
+    }
+
+    public void kliktProductlink() {
+        
+    }
 }

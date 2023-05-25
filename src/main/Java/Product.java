@@ -1,19 +1,21 @@
 public class Product {
-    private int productID;
-    private String naam;
-    private double prijs;
-    private String afbeelding;
+    private String productID;
+    private String productnaam;
+    private String categorie;
     private String affiliateLink;
+    private String partnerwebsite;
 
-    public Product(int productID, String naam, double prijs, String afbeelding, String affiliateLink) {
-        this.productID = productID;
-        this.naam = naam;
-        this.prijs = prijs;
-        this.afbeelding = afbeelding;
-        this.affiliateLink = affiliateLink;
+    
+
+    public void voegProductToe() {
+       
     }
 
-    // Getters en setters voor de attributen
-}
+    public void updateProductInfo() {
+        
+    }
 
+    public void verwijderProduct() {
+        
+    }
 }

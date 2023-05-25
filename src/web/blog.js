@@ -1,7 +1,5 @@
-// Verkrijg een referentie naar het container-element voor de blogposts
 const blogPostContainer = document.querySelector('#blog-post-container');
 
-// Definieer een array van voorbeeldblogberichten
 const blogPosts = [
   {
     title: 'mooie stoel',
@@ -30,7 +28,6 @@ const blogPosts = [
   },
 ];
 
-// Functie om een enkel blogbericht te genereren en terug te geven als HTML-string
 function generateBlogPostHTML(post) {
   return `
     <div class="blog-post">
@@ -42,19 +39,14 @@ function generateBlogPostHTML(post) {
   `;
 }
 
-// Functie om alle blogberichten te genereren en in te voegen in het container-element
 function generateBlogPosts() {
-  // Maak een lege string om de HTML-code voor alle blogberichten op te slaan
   let html = '';
 
-  // Loop door alle blogberichten en voeg de HTML-code van elk bericht toe aan de lege string
   for (const post of blogPosts) {
     html += generateBlogPostHTML(post);
   }
 
-  // Voeg de HTML-code van alle blogberichten in het container-element in
   blogPostContainer.innerHTML = html;
 }
 
-// Roep de generateBlogPosts functie aan om alle blogberichten te genereren en in te voegen in het container-element
 generateBlogPosts();

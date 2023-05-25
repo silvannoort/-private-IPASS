@@ -8,7 +8,7 @@ async function loadDashboard() {
 }
 
 async function fetchAffiliateSales() {
-    // (Same as before)
+   
 }
 
 function displaySalesData(salesData) {
