@@ -1,0 +1,16 @@
+[
+    {
+        "productID": "1",
+        "productnaam": "Product 1",
+        "categorie": "Categorie 1",
+        "affiliateLink": "https://voorbeeld.com/product1",
+        "partnerwebsite": "voorbeeld.com"
+    },
+    {
+        "productID": "2",
+        "productnaam": "Product 2",
+        "categorie": "Categorie 2",
+        "affiliateLink": "https://voorbeeld.com/product2",
+        "partnerwebsite": "voorbeeld.com"
+    }
+]

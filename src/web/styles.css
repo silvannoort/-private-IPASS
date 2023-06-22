@@ -416,6 +416,10 @@ form label {
     max-width: 800px;
     margin: 0 auto;
 }
+.contact-form input {
+    width: 50%;
+}
+
 
 
 
